@@ -7,7 +7,9 @@ public class SnakeAndLadder {
 
     public static void main(String[] args) {
         int position = 0;
+        int diceCount = 0;
         while (position < WINNING_POSITION) {
+            diceCount++;
             int diceNumber = (int) (Math.floor(Math.random() * 10) % 6 + 1);
             System.out.println("DiceNumber is : " + diceNumber);
 
@@ -35,5 +37,6 @@ public class SnakeAndLadder {
             }
             System.out.println("Position is :" + position);
         }
+        System.out.println("No.of Times Roll Die is : " + diceCount);
     }
 }
